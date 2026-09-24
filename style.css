@@ -12,8 +12,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(239, 255, 255);
     margin: 0px;
+    color: #2d65c0;
 }
 
+/* header for all pages */
 header {
     display: flex;
     background-color: var(--dark-purple);
@@ -22,7 +24,7 @@ header {
 }
 
 header h3 {
-    flex-basis: 84%;
+    flex-basis: 85%;
     margin: 0px;
     padding-left: 10px;
     color: snow;
@@ -31,8 +33,10 @@ header h3 {
 }
 
 header nav {
+    flex-basis: 15%;
+    text-align: right;
     line-height: 25px;
-    margin: 0px;
+    margin-right: 10px;
     padding: 0px;
 }
 
@@ -61,8 +65,35 @@ a:visited{
     background-color: #CDFDFE;
 }
 
+/* main body */
 main{
+    display : flex;
+    flex-direction: row;
+    margin: 0px 10px;
+    gap: 10px;
     flex: 1 0 100%;
+}
+
+.main-page {
+    flex-direction: column;
+    gap: 0px;
+}
+
+.technologies {
+    flex-basis: 20%;
+}
+
+.work-education {
+    flex-basis: 80%;
+    
+}
+
+.editor-trees {
+    flex-basis: 50%;
+}
+
+.starlit-botany {
+    flex-basis: 50%;
 }
 
 #main-title {
@@ -74,27 +105,39 @@ main{
     font-size: 32pt;
 }
 
+img{
+    border: 3px solid #2d65c0;
+    width: 350px;
+    border-radius: 50px;
+}
+
+/* main page text body section */
 .text-body{
     display: flex;
     flex-direction: row;
 }
 
-img {
-    width: 350px;
-    border: 5px solid #2d65c0;
-    border-radius: 50px;
+.text-body img {
     margin-top: 25px;
     margin-left: 90px;
     float: left;
 }
 
-p {
+.text-body p {
     color: #2d65c0;
     margin-top: 50px;
     margin-left: 20px;
     font-size: 1.2rem;
+    width: 750px;
 }
 
+/* heading tags for all pages*/
+
+h1{
+    margin-left: 10px;
+}
+
+/* footer for all sections */
 footer {
     text-align: center;
     background-color: var(--dark-purple);
