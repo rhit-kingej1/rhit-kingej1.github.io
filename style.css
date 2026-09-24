@@ -1,0 +1,49 @@
+:root {
+    --light-pink: #FFE6E3;
+    --dark-purple: #74689b;
+    --green: #B7D0A8;
+    --light-yellow: #F1E3BA;
+    --brown: #A88271;
+    --cream: #f9ecc0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Verdana", "Arial", sans-serif;
+    background-color: var(--green);
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    background-color: var(--dark-purple);
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+header h1 {
+    border: 3px solid black;
+    flex-basis: 85%;
+    margin: 0px;
+    padding: 0px;
+    color: var(--cream);
+}
+
+header nav {
+    border: 3px solid black;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    flex: 1 0 100%;
+}
+
+img {
+    width: 200px;
+}
+
+footer {
+    background-color: var(--dark-purple);
+}
