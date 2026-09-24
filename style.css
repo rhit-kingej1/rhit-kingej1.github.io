@@ -34,7 +34,7 @@ header h3 {
 
 header nav {
     flex-basis: 15%;
-    text-align: right;
+    text-align: center;
     line-height: 25px;
     margin-right: 10px;
     padding: 0px;
@@ -51,18 +51,22 @@ button {
 a {
     color: snow;
     text-decoration: none;
-}
-
-button:hover {
-    background-color: snow;
+    border: 1px solid snow;
+    border-radius: 25px;
+    padding: 5px 10px; 
 }
 
 a:hover {
-    background-color: #2d65c0;
+    border-color: snow;
+    background-color: snow;
+    color: #2d65c0
 }
 
 a:visited{
-    background-color: #CDFDFE;
+    color: #0D3059;
+    background-color: #DFBE7D;
+    border-color: #DFBE7D;
+
 }
 
 /* main body */
