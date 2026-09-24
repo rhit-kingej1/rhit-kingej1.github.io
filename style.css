@@ -36,24 +36,16 @@ header nav {
     flex-basis: 15%;
     text-align: center;
     line-height: 25px;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 0px;
 }
-
-button {
-    line-height: 15px;
-    border: 1px solid snow;
-    background-color: #2d65c0;
-    border-radius: 25px;
-    padding: 5px 10px;
-}
-
 a {
     color: snow;
     text-decoration: none;
     border: 1px solid snow;
     border-radius: 25px;
     padding: 5px 10px; 
+    margin: 5px;
 }
 
 a:hover {
