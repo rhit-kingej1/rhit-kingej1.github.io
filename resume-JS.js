@@ -7,6 +7,7 @@ myName.textContent = "Evelyn King";
 header.appendChild(myName);
 
 let navBar = document.createElement("nav");
+navBar.role = "navigation";
 header.appendChild(navBar);
 
 let homeLink = document.createElement("a");
@@ -24,10 +25,20 @@ portfolioLink.href="/portfolio.html"
 portfolioLink.textContent = "Portfolio"
 navBar.appendChild(portfolioLink);
 
+let footerName = document.createElement("p");
+footerName.textContent = "Evelyn King";
+footer.appendChild(footerName);
+
 let handshakeLink = document.createElement("a");
 handshakeLink.href = "https://app.joinhandshake.com/profiles/y8kxvs";
-handshakeLink.textContent = "Handshake Profile";
+handshakeLink.id = "handshake-logo-link";
 footer.appendChild(handshakeLink)
+
+let handshakeLogo = document.createElement("img");
+handshakeLogo.src= "handshakelogo.png" 
+handshakeLogo.alt= "Handshake profile page" 
+handshakeLogo.id= "handshake-logo";
+handshakeLink.appendChild(handshakeLogo);
 
 let techButton = document.getElementById("tech")
 let techSection = document.getElementById("tech-section")

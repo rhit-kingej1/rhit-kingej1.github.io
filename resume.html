@@ -6,29 +6,29 @@
 	</head>
 <body>
 
-    <header>
+    <header role="banner">
         
     </header>
 
     <section class="page-title">
         <h1>Digital Resume</h1>
-        <button id="tech">Tech</button>
+        <button id="tech">Technology</button>
         <button id="work">Work</button>
         <button id="edu">Education</button>
     </section>
 
-    <main class="main-resume">
-        <section class="technologies" id="tech-section">
+    <main class="main-resume" role="main">
+        <section class="technologies" id="tech-section" aira-label ="Technical Skills Section">
             <h2>Technologies</h2>
             <hr>
-            <div>
-                <ul>
+            <div aria-label="technologies columns">
+                <ul aria-label="column 1">
                     <li>Python</li>
                     <li>Java</li>
                     <li>C</li>
                 </ul>
 
-                <ul>
+                <ul aria-label="column 2">
                     <li>ARM Assembly</li>
                     <li>SQL</li>
                     <li>Microsoft Office 360</li>
@@ -36,8 +36,8 @@
             </div>
         </section>
     
-        <section class="work" id="work-section" hidden>
-            <h2>Work Expirence</h2>
+        <section class="work" id="work-section" hidden aria-label="Work Experiences">
+            <h2>Work Experience</h2>
             <hr>
             <h3>Rose-Hulman Institute of Technology</h3>
             <h4><em>Sophomore Advisor</em></h4>
@@ -47,11 +47,11 @@
             </ul>
         </section>
 
-        <section class="education" id="edu-section" hidden>
+        <section class="education" id="edu-section" hidden aria-label="Education History">
             <h2>Education History</h2>
             <hr>
-            <div class="education-columns">
-                <div class="rose-hulman">
+            <div class="education-columns" aria-label="education-columns">
+                <div class="rose-hulman" aria-label = "Rose-Hulman">
                     <h3>Rose-Hulman Institute of Technology</h3>
                     <h4><em>Bachelor of Science, Computer Science – GPA: 4.00</em></h4>
                     <ul>
@@ -64,7 +64,7 @@
                         <li>Computer Architecture I</li>
                         <li>Introduction to Web Programming</li>
                     </ul>
-                </div class="study-abroad">
+                </div class="study-abroad" aria-label="Italy Study Abroad">
                 <div>
                     <h3>CET Siena</h3>
                     <h4><em>Study Abroad</em></h4>
@@ -77,7 +77,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
 
     </footer>
     

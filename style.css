@@ -76,6 +76,9 @@ a:visited{
         border-radius: 25px;
         color: darkslategrey;
     }
+    #tech{
+        background-color: #CBCBBE;
+    }
 
 }
 
@@ -124,6 +127,7 @@ main{
 }
 
 /* main for resume page */
+/* learned how to stack content here: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Positioned_layout/Stacking_context */
 .main-resume {
     display: flex;
     justify-content: center;
@@ -241,6 +245,12 @@ img{
     border-radius: 50px;
 }
 
+#handshake-logo{
+   border: none;
+   object-fit: cover;
+   border-radius: 0px;
+   width: 40px;
+}
 /* heading tags for all pages*/
 h1{
     margin-left: 10px;
@@ -248,14 +258,28 @@ h1{
 
 /* footer for all sections */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    color: lightgray;
     background-color: var(--dark-green);
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
-    a {
-        margin-top: 20px;
-        margin-bottom: 10px;
+    #handshake-logo-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 0px;
+        padding: 0px; 
     }
+    #handshake-logo-link:visited {
+        border: 3px solid var(--pink);
+    }
+    p {
+        margin-top: 0px;
+    }
+
 }
 

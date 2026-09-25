@@ -1,32 +1,31 @@
 <html>
 	<head>
         <!-- add roles for different section and aria-labels to sections -->
-        <!-- add images for buttons -->
-        <!-- set tech button to defalut gry background -->
 		<title>Evelyn King's Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <script defer src="index-JS.js"></script>
 	</head>
     <body>
-        <header>
+        <header role="banner">
             <h3>Evelyn King</h3>
-            <nav>
+            <nav role="navigation">
                 <a id="main-resume" href="/index.html">Home</a>
                 <a id="main-resume" href="/resume.html">Resume</a>
                 <a id="main-portfolio" href="/portfolio.html">Portfolio</a>
             </nav>
         </header>
 
-        <main class="main-page">
+        <main class="main-page" role="main">
             <h1 id="main-title">Hello, I'm Evelyn King</h1>
-            <section class="text-body">
+            <section class="text-body" aria-label="Main page text">
                 <img src="https://http.cat/images/426.jpg" alt="picture of Evelyn King">
                 <p>I'm a sophmore at Rose-Hulman Insitute of Technology studying Computer Science. This is my digital resume website, feel free to explore.</p>
             </section>
         </main>
 
-        <footer>
-            <a href="https://app.joinhandshake.com/profiles/y8kxvs">Handshake Profile</a>
+        <footer role="contentinfo">
+            <p>Evelyn King</p>
+            <a href="https://app.joinhandshake.com/profiles/y8kxvs" id="handshake-logo-link"><img src = "handshakelogo.png" alt="Handshake profile page" id="handshake-logo"></a>
         </footer>
     </body>
 </html>
