@@ -32,9 +32,9 @@ footer.appendChild(handshakeLink)
 let techButton = document.getElementById("tech")
 let techSection = document.getElementById("tech-section")
 techButton.addEventListener("click", function() {
-    this.style.backgroundColor = "#808080";
-    workButton.style.backgroundColor = "blue";
-    eduButton.style.backgroundColor = "blue";
+    this.style.backgroundColor = "#CBCBBE";
+    workButton.style.backgroundColor = "#EDB7B0";
+    eduButton.style.backgroundColor = "#EDB7B0";
     techSection.hidden = false;
     workSection.hidden = true;
     eduSection.hidden = true;
@@ -43,9 +43,9 @@ techButton.addEventListener("click", function() {
 let workButton = document.getElementById("work")
 let workSection = document.getElementById("work-section")
 workButton.addEventListener("click", function() {
-    techButton.style.backgroundColor = "blue";
-    this.style.backgroundColor = "#808080";
-    eduButton.style.backgroundColor = "blue";
+    techButton.style.backgroundColor = "#EDB7B0";
+    this.style.backgroundColor = "#CBCBBE";
+    eduButton.style.backgroundColor = "#EDB7B0";
     techSection.hidden = true;
     workSection.hidden = false;
     eduSection.hidden = true;
@@ -54,9 +54,9 @@ workButton.addEventListener("click", function() {
 let eduButton = document.getElementById("edu")
 let eduSection = document.getElementById("edu-section")
 eduButton.addEventListener("click", function() {
-    this.style.backgroundColor = "#808080";
-    techButton.style.backgroundColor = "blue";
-    workButton.style.backgroundColor = "blue";
+    this.style.backgroundColor = "#CBCBBE";
+    techButton.style.backgroundColor = "#EDB7B0";
+    workButton.style.backgroundColor = "#EDB7B0";
     techSection.hidden = true;
     workSection.hidden = true;
     eduSection.hidden = false;

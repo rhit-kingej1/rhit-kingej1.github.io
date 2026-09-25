@@ -1,24 +1,24 @@
 :root {
-    --light-pink: #FFE6E3;
-    --dark-purple: #2d65c0;
-    --green: #e5f3dc;
-    --light-yellow: #F1E3BA;
-    --brown: #A88271;
-    --cream: #efeee8;
+    --cream: #faf2da;
+    --green: #8e9776;
+    --dark-green: #4a503d;
+    --darker-green: #111410;
+    --pink: #e28f83;
+    --light-pink: #EDB7B0;
 }
 body {
     display: flex;
     flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(239, 255, 255);
+    background-color: #d3d3d3;
     margin: 0px;
-    color: #2d65c0;
+    color: #2f4f4f;
 }
 
 /* header for all pages */
 header {
     display: flex;
-    background-color: var(--dark-purple);
+    background-color: var(--dark-green);
     padding-top: 10px;
     padding-bottom: 5px;
 
@@ -26,7 +26,7 @@ header {
         flex-basis: 75%;
         margin-top: 10px;
         padding-left: 10px;
-        color: snow;
+        color: lightgrey;
         font-size: .8rem;
     } 
     
@@ -42,39 +42,39 @@ header {
 }
 
 a {
-    color: snow;
+    color: lightgrey;
     text-decoration: none;
-    border: 1px solid snow;
     border-radius: 25px;
     padding: 5px 10px; 
 }
 
 a:hover {
-    border-color: snow;
-    background-color: snow;
-    color: #2d65c0
+    background-color: var(--darker-green);
 }
 
 a:visited{
-    color: #0D3059;
-    background-color: #DFBE7D;
-    border-color: #DFBE7D;
-
+    color: var(--light-pink);
 }
 
 /* page title section for resume and portfolio */
 .page-title{
     display: flex;
     gap: 10px;
+    border: 3px dotted var(--pink);
+    background-color: var(--light-pink);
+    border-radius: 25px;
+    margin: 10px 5px;
     h1 {
         margin-right: 45px;
     }
     button {
-        background-color: rgb(239, 255, 255);
-        border: 2px solid #2d65c0;
+        border: 2px solid var(--light-pink);
+        background-color: var(--light-pink);
+        border-radius: 25px;
         height: 50px;
         align-self: center;
         border-radius: 25px;
+        color: darkslategrey;
     }
 
 }
@@ -94,7 +94,7 @@ main{
     margin-top: 70px;
     margin-left: 100px;
     font-size: 32pt;
-    color: #2d65c0;
+    color: #2f4f4f;
     font-size: 32pt;
 }
 
@@ -111,32 +111,90 @@ main{
 }
 
 .text-body p {
-    color: #2d65c0;
+    color: darkslategray;
+    border: 3px dotted var(--pink);
     margin-top: 50px;
     margin-left: 20px;
     font-size: 1.2rem;
     width: 750px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--light-pink);
 }
 
 /* main for resume page */
 .main-resume {
-    display: felx;
+    display: flex;
+    justify-content: center;
 }
 
 .technologies {
     position: absolute;
-    z-index: 1
+    z-index: 1;
+    border: 3px dotted var(--pink);
+    background-color: var(--light-pink);
+    border-radius: 25px;
+    margin: 10px 5px;
+    width: 700px;
+    h2 {
+        text-align: center;
+    }
+    hr{
+        border: 1px dashed #e28f83;
+    }
+    div{
+        display: flex;
+        font-size: 1.2rem;
+        justify-content: center;
+        gap: 20px;
+    }
 }
 
 .work {
     position: absolute;
-    z-index: 2
-    
+    z-index: 2;
+    border: 3px dotted var(--pink);
+    background-color: var(--light-pink);
+    border-radius: 25px;
+    margin: 10px 5px;
+    padding: 10px;
+    h2 {
+        text-align: center;
+    }
+    hr{
+        border: 1px dashed #e28f83;
+    }
 }
 
 .education {
     position: absolute;
     z-index: 3;
+    border: 3px dotted var(--pink);
+    background-color: var(--light-pink);
+    border-radius: 25px;
+    margin: 10px 5px;
+    padding: 10px;
+    h2 {
+        text-align: center;
+    }
+    hr{
+        border: 1px dashed #e28f83;
+    }
+    .education-columns{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        h3 {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
+        .rose-hulman {
+            flex-basis: 50%;
+        }
+    }
 
 }
 
@@ -148,15 +206,37 @@ main{
 
 .editor-trees {
     flex-basis: 50%;
+    border: 3px dotted var(--pink);
+    background-color: var(--light-pink);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    h2 {
+        text-align: center;
+    }
+    hr{
+        border: 1px dashed #e28f83;
+    }
 }
 
 .starlit-botany {
     flex-basis: 50%;
+    border: 3px dotted var(--pink);
+    background-color: var(--light-pink);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    h2 {
+        text-align: center;
+    }
+    hr{
+        border: 1px dashed #e28f83;
+    }
 }
 
 /* all images */
 img{
-    border: 3px solid #2d65c0;
+    border: 3px solid var(--pink);
     width: 350px;
     border-radius: 50px;
 }
@@ -169,7 +249,7 @@ h1{
 /* footer for all sections */
 footer {
     text-align: center;
-    background-color: var(--dark-purple);
+    background-color: var(--dark-green);
     padding-top: 20px;
     padding-bottom: 10px;
 
