@@ -7,19 +7,18 @@
 <body>
 
     <header>
-        <!-- <h3>Evelyn King</h3> -->
-        <!-- <nav>
-            <a href="/index">Home</a>
-            <a href="/portfolio">Portfolio</a>
-        </nav> -->
+        
     </header>
 
     <section class="page-title">
         <h1>Digital Resume</h1>
+        <button id="tech">Tech</button>
+        <button id="work">Work</button>
+        <button id="edu">Education</button>
     </section>
 
-    <main>
-        <section class="technologies">
+    <main class="main-resume">
+        <section class="technologies" id="tech-section">
             <h2>Technologies</h2>
             <ul>
                 <li>Python</li>
@@ -31,7 +30,7 @@
             </ul>
         </section>
     
-        <section class="work-education">
+        <section class="work" id="work-section" hidden>
             <h2>Work Expirence</h2>
             <h3>Rose-Hulman Institute of Technology</h3>
             <h4><em>Sophomore Advisor</em></h4>
@@ -39,7 +38,9 @@
                 <li>Live in a freshman residence hall to help 70 residents adjust to college life.</li>
                 <li>Work in small and large teams to mentor, plan weekly events, promote on campus events, help with academics, and connect freshmen to campus communities.</li>
             </ul>
+        </section>
 
+        <section class="education" id="edu-section" hidden>
             <h2>Education History</h2>
             <h3>Rose-Hulman Institute of Technology</h3>
             <h4><em>Bachelor of Science, Computer Science – GPA: 4.00/4.00</em></h4>
@@ -63,7 +64,7 @@
     </main>
 
     <footer>
-        <a href="https://app.joinhandshake.com/profiles/y8kxvs">Handshake Profile</a>
+
     </footer>
     
 </body>

@@ -10,6 +10,7 @@ function domLoaded() {
             <nav>
                 <a id="portfolio-home" href="/index.html">Home</a>
                 <a id="portfolio-resume" href="/resume.html">Resume</a>
+                <a id="portfolio-portfolio" href="/portfolio.html">Portfolio</a>
             </nav>`;
     
     footer.innerHTML = '<a href="https://app.joinhandshake.com/profiles/y8kxvs">Handshake Profile</a>'

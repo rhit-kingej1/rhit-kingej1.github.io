@@ -21,31 +21,32 @@ header {
     background-color: var(--dark-purple);
     padding-top: 10px;
     padding-bottom: 5px;
+
+    h3 {
+        flex-basis: 75%;
+        margin-top: 10px;
+        padding-left: 10px;
+        color: snow;
+        font-size: .8rem;
+    } 
+    
+    nav {
+        flex-basis: 25%;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        line-height: 25px;
+        margin-right: 5px;
+    }
 }
 
-header h3 {
-    flex-basis: 85%;
-    margin: 0px;
-    padding-left: 10px;
-    color: snow;
-    font-size: .75rem;
-    line-height: 30px;
-}
-
-header nav {
-    flex-basis: 15%;
-    text-align: center;
-    line-height: 25px;
-    margin-right: 5px;
-    padding: 0px;
-}
 a {
     color: snow;
     text-decoration: none;
     border: 1px solid snow;
     border-radius: 25px;
     padding: 5px 10px; 
-    margin: 5px;
 }
 
 a:hover {
@@ -61,7 +62,24 @@ a:visited{
 
 }
 
-/* main body */
+/* page title section for resume and portfolio */
+.page-title{
+    display: flex;
+    gap: 10px;
+    h1 {
+        margin-right: 45px;
+    }
+    button {
+        background-color: rgb(239, 255, 255);
+        border: 2px solid #2d65c0;
+        height: 50px;
+        align-self: center;
+        border-radius: 25px;
+    }
+
+}
+
+/* main body for all pages */
 main{
     display : flex;
     flex-direction: row;
@@ -70,28 +88,7 @@ main{
     flex: 1 0 100%;
 }
 
-.main-page {
-    flex-direction: column;
-    gap: 0px;
-}
-
-.technologies {
-    flex-basis: 20%;
-}
-
-.work-education {
-    flex-basis: 80%;
-    
-}
-
-.editor-trees {
-    flex-basis: 50%;
-}
-
-.starlit-botany {
-    flex-basis: 50%;
-}
-
+/* main for home page */
 #main-title {
     text-align: left;
     margin-top: 70px;
@@ -101,13 +98,7 @@ main{
     font-size: 32pt;
 }
 
-img{
-    border: 3px solid #2d65c0;
-    width: 350px;
-    border-radius: 50px;
-}
-
-/* main page text body section */
+/* home page text body section */
 .text-body{
     display: flex;
     flex-direction: row;
@@ -127,8 +118,50 @@ img{
     width: 750px;
 }
 
-/* heading tags for all pages*/
+/* main for resume page */
+.main-resume {
+    display: felx;
+}
 
+.technologies {
+    position: absolute;
+    z-index: 1
+}
+
+.work {
+    position: absolute;
+    z-index: 2
+    
+}
+
+.education {
+    position: absolute;
+    z-index: 3;
+
+}
+
+/* main for portfolio page */
+.main-page {
+    flex-direction: column;
+    gap: 0px;
+}
+
+.editor-trees {
+    flex-basis: 50%;
+}
+
+.starlit-botany {
+    flex-basis: 50%;
+}
+
+/* all images */
+img{
+    border: 3px solid #2d65c0;
+    width: 350px;
+    border-radius: 50px;
+}
+
+/* heading tags for all pages*/
 h1{
     margin-left: 10px;
 }
@@ -139,4 +172,10 @@ footer {
     background-color: var(--dark-purple);
     padding-top: 20px;
     padding-bottom: 10px;
+
+    a {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 }
+
